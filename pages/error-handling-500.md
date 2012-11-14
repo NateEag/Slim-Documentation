@@ -16,7 +16,7 @@ and only argument.
 
     <?php
     $app = new \Slim\Slim();
-    $app->error(function (\Exception $e) use ($app) {
+    $app->error(function (\Exception $e = null) use ($app) {
         $app->render('error.php');
     });
 
